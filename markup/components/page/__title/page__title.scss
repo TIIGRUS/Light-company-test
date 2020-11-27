@@ -5,6 +5,7 @@
 
     @include media-min(tablet) {
         font-size: 48px;
+        margin: 0 0 49px;
     }
 
     @include media-min(desktop) {
