@@ -1,0 +1,12 @@
+mixin card(options)
+    article.card(class={'cards__item': options.block === 'cards', 'card_reverse': options.reverse == true})&attributes(attributes)
+        img(src=options.image alt="Item").card__image
+        div.card__description
+            h2.card__title.card__title_name
+                | Izabella8
+            p.card__text
+                | Global Infrastructure Architect
+            h3.card__title.card__title_time
+                | 08:30 – 09:00
+            p.card__text
+                | Qui eos a quia dolorem sapiente deserunt ut expedita sunt. Quia perspiciatis quo excepturi id dolor voluptatem aut adipisci.

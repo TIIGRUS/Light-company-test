@@ -1,0 +1,12 @@
+.page {
+    font: 400 12px/170% $page-font;
+    color: #676767;
+
+    @include media-min(tablet) {
+        font-size: 14px;
+    }
+
+    @include media-min(desktop) {
+        font-size: 16px;
+    }
+}

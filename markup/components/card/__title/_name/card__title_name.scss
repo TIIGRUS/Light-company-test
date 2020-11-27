@@ -1,0 +1,12 @@
+.card__title_name {
+    font: 400 14px/140% $space-grotesk;
+    text-transform: uppercase;
+
+    @include media-min(tablet) {
+        font-size: 18px;
+    }
+
+    @include media-min(desktop) {
+        font-size: 20px;
+    }
+}

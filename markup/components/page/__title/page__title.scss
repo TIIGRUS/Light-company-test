@@ -1,0 +1,13 @@
+.page__title {
+    font: 400 30px/120% $space-grotesk;
+    text-transform: uppercase;
+    margin: 0 0 34px;
+
+    @include media-min(tablet) {
+        font-size: 48px;
+    }
+
+    @include media-min(desktop) {
+        font-size: 72px;
+    }
+}

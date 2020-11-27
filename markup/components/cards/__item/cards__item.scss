@@ -1,0 +1,5 @@
+.cards__item {
+    @include media-min(desktop) {
+        max-width: calc(50% - 16px);
+    }
+}

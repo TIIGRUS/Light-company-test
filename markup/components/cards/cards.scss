@@ -1,0 +1,10 @@
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include media-min(desktop) {
+        flex-direction: row;
+    }
+}

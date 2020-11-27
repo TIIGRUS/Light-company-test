@@ -1,0 +1,5 @@
+.card_reverse {
+    @include media-min(desktop) {
+        flex-direction: row-reverse;
+    }
+}

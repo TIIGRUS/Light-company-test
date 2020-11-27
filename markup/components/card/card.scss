@@ -1,0 +1,9 @@
+.card {
+    padding: 0 0 48px;
+    display: flex;
+    flex-direction: column-reverse;
+
+    @include media-min(tablet) {
+        flex-direction: row;
+    }
+}

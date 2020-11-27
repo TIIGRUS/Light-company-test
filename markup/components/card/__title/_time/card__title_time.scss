@@ -1,0 +1,12 @@
+.card__title_time {
+    font-weight: 700;
+    font-size: 12px;
+
+    @include media-min(tablet) {
+        font-size: 14px;
+    }
+
+    @include media-min(desktop) {
+        font-size: 16px;
+    }
+}

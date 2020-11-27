@@ -2,12 +2,34 @@ doctype html
 html(class="no-js" lang="ru")
 
     include ../components/head/head.pug
-    include ../components/example/example.pug
+    include ../components/card/card.pug
     include ../components/footer/footer.pug
 
     head
         +head(head.index)
     body.page
+        main.page__container
+            h1.page__title Voluptatem illo assumenda
+
+            section.cards
+                +card({
+                    image: '__static__img/content/item-1.png',
+                    block: 'cards'
+                })
+                +card({
+                    image: '__static__img/content/item-2.png',
+                    block: 'cards'
+                })
+                +card({
+                    image: '__static__img/content/item-3.png',
+                    block: 'cards',
+                    reverse: true
+                })
+                +card({
+                    image: '__static__img/content/item-4.png',
+                    block: 'cards',
+                    reverse: true
+                })
 
 
         +footer()
@@ -17,4 +39,4 @@ html(class="no-js" lang="ru")
         script svg4everybody();
 
         //- Main scripts. You can replace it, but I recommend you to leave it here
-        script(src='%=static=%js/main%=hash=%%=min=%.js')
+        //- script(src='%=static=%js/main%=hash=%%=min=%.js')

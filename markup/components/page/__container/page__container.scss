@@ -1,0 +1,11 @@
+.page__container {
+    min-width: 250px;
+    width: 1366px;
+    max-width: calc(100% - 24px * 2);
+    margin: 0 auto;
+    padding: 76px 0;
+
+    @include media-min(desktop) {
+        padding: 96px 0;
+    }
+}
