@@ -3,13 +3,16 @@ html(class="no-js" lang="ru")
 
     include ../components/head/head.pug
     include ../components/card/card.pug
+    include ../components/page/__title/page__title.pug
     include ../components/footer/footer.pug
 
     head
         +head(head.index)
     body.page
         main.page__container
-            h1.page__title Voluptatem illo assumenda
+            +page__title({
+                title: 'Voluptatem illo assumenda'
+            })
             section.cards
                 +card({
                     image: '__static__img/content/item-1.png',
