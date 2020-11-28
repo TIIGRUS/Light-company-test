@@ -1,6 +1,6 @@
 .page {
     font: 400 12px/170% $page-font;
-    color: #676767;
+    color: $page-color;
 
     @include media-min(tablet) {
         font-size: 14px;
