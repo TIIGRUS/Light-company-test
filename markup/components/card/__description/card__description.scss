@@ -1,5 +1,5 @@
 .card__description {
-    border-top: 1px solid rgba($color: #000000, $alpha: 0.3);
+    border-top: 1px solid rgba($color: $dark-color, $alpha: 0.3);
     padding: 16px 0;
 
     @include media-min(tablet) {
