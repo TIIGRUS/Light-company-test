@@ -3,6 +3,7 @@ html(class="no-js" lang="ru")
 
     include ../components/head/head.pug
     include ../components/form/__control/form__control.pug
+    include ../components/page/__title/page__title.pug
     include ../components/footer/footer.pug
 
     head
@@ -10,7 +11,10 @@ html(class="no-js" lang="ru")
 
     body.page
         main.page__container.page__container_cards
-            h1.page__title.page__title_cards Voluptatem illo assumenda
+            +page__title({
+                title: 'Voluptatem illo assumenda',
+                class: 'page__title_cards'
+            })
 
             section.card-info
                 article.card-info__description
@@ -18,10 +22,12 @@ html(class="no-js" lang="ru")
                         span.card-info__options-span
                             | Start:
                         | october 29
+
                     h3.card-info__options
                         span.card-info__options-span
                             | Remained:
                         | 15 seats
+
                     p.card-info__text
                         | Qui eos a quia dolorem sapiente deserunt ut expedita sunt. Quia perspiciatis quo excepturi id dolor voluptatem aut adipisci.
 

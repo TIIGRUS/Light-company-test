@@ -1,3 +1,3 @@
 mixin page__title(options)
-    h1.page__title
-        mark.page__title-mark=options.title
+    h1.page__title(class=options.class)
+        mark.page__title-mark=options.title || 'Title'
