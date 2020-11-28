@@ -1,26 +1,16 @@
-<p align="right">
-<a href="README.md">English description</a> | Описание на русском
-</p>
+# Описание задачи
+
+### Ссылка на [Макет](https://www.figma.com/file/SRnMOjKIHy2LSh36b3K7c7/Test?node-id=0%3A1):
+
+* Нужно сверстать 2 простеньких экрана, адаптив, макеты даны для 3 разрешений.
+* Нельзя использовать готовые фреймворки.
+* Результат на одной странице.
 
 # TARS-CLI
 
-[![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Mac/Linux Build Status](https://img.shields.io/travis/tars/tars-cli/master.svg?label=Mac%20OSX%20%26%20Linux&style=flat-square)](https://travis-ci.org/tars/tars-cli) [![Windows Build status](https://img.shields.io/appveyor/ci/artem-malko/tars-cli/master.svg?label=Windows&style=flat-square)](https://ci.appveyor.com/project/artem-malko/tars-cli/branch/master) [![Gitter][gitter-image]][gitter-link]
+## Установка
 
 TARS-CLI — Command Line Interface для сборщика верстки [TARS](https://github.com/tars/tars/blob/master/README_RU.md).
-
-Основная проблема при разработке верстки с помощью TARS — необходимость каждый раз устанавливать все npm-зависимости. Каждый проект в результате занимает больше 200 МБ. Чтобы упростить процедуру инициализации проекта и облегчить работу с TARS в целом был создан TARS-CLI. Вся основная документация по TARS находится в оригинальном репозитории [TARS](https://github.com/tars/tars/blob/master/README_RU.md).
-
-TARS-CLI — это только интерфейс к основному сборщику, который позволяет:
-
-* Инициализировать проект.
-* Запустить dev-сборку с перезагрузкой браузера и открытием туннеля во внешний веб.
-* Запустить build-сборку с минифицированными файлами или в режиме release.
-* Добавить компонент с различным набором файлов.
-* Добавить страницу, как пустую, так и копию существующей.
-
-**Если у вас возникли проблемы при работе с TARS-CLI, прошу ознакомится с разделом [troubleshooting](https://github.com/tars/tars-cli/blob/master/docs/ru/troubleshooting.md).**
-
-## Установка
 
 Для корректной работы необходимо установить TARS-CLI глобально:
 
