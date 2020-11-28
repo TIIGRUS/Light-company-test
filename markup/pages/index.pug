@@ -4,17 +4,18 @@ html(class="no-js" lang="ru")
     include ../components/head/head.pug
     include ../components/card/card.pug
     include ../components/page/__title/page__title.pug
+    include ../components/form/__control/form__control.pug
     include ../components/footer/footer.pug
 
     head
         +head(head.index)
     body.page
-        main.page__container
-            +page__title({
-                title: 'Voluptatem illo assumenda'
-            })
+        main
+            section.cards.page__container
+                +page__title({
+                    title: 'Voluptatem illo assumenda'
+                })
 
-            section.cards
                 +card({
                     image: '__static__img/content/item-1.png',
                     block: 'cards'
@@ -33,6 +34,57 @@ html(class="no-js" lang="ru")
                     block: 'cards',
                     reverse: true
                 })
+
+            section.card-info.page__container.page__container_cards
+                +page__title({
+                    title: 'Voluptatem illo assumenda',
+                    class: 'page__title_cards card-info__title'
+                })
+
+                article.card-info__description
+                    h2.card-info__options
+                        span.card-info__options-span
+                            | Start:
+                        | october 29
+
+                    h3.card-info__options
+                        span.card-info__options-span
+                            | Remained:
+                        | 15 seats
+
+                    p.card-info__text
+                        | Qui eos a quia dolorem sapiente deserunt ut expedita sunt. Quia perspiciatis quo excepturi id dolor voluptatem aut adipisci.
+
+                .card-info__pricing
+                    p.card-info__pricing-title
+                        | Labore qui et animi.
+                    .card-info__price-wrap
+                        h4.card-info__price
+                            | 325 900 ₽
+                            span.card-info__price-span
+                                | per month
+                        .card-info__discount
+                            span.card-info__discount-span
+                                | -40%
+                            | until 28 december
+                    h5.card-info__without-discount
+                        | installment plan without discount
+                        span.card-info__without-discount-span
+                            | 5000 ₽/month
+
+                form(action="#").form.card-info__form
+                    +form__control({
+                        placeholder: 'Your email',
+                        type: 'email'
+                    })
+                    +form__control({
+                        placeholder: 'Your phone'
+                    })
+                    +form__control({
+                        placeholder: 'Your name'
+                    })
+                    button(type="submit").form__btn
+                        | Subscribe
 
         +footer()
 
