@@ -1,5 +1,9 @@
 .card_reverse {
     @include media-min(desktop) {
         flex-direction: row-reverse;
+
+        .card__description {
+            padding: 24px 32px 0 0;
+        }
     }
 }

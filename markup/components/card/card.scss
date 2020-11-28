@@ -6,4 +6,8 @@
     @include media-min(tablet) {
         flex-direction: row;
     }
+
+    @include media-min(tablet) {
+        padding: 0 0 32px;
+    }
 }
