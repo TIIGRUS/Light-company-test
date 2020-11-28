@@ -9,7 +9,7 @@
 
 * [Демо](https://tiigrus.github.io/Light-company-test/)
 * Скомпилированные файлы [здесь](https://github.com/TIIGRUS/Light-company-test/tree/gh-pages). 
-* Потраченное время 6 часов 40 минут. 
+* Потраченное время _**6 часов 40 минут**_. 
 
 # TARS-CLI
 
