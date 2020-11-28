@@ -1,0 +1,32 @@
+.form__btn {
+    font: 400 20px/110% $space-grotesk;
+    text-transform: uppercase;
+    background: none;
+    border: none;
+    position: relative;
+    padding: 0;
+    color: $dark-color;
+    transition: color 0.25s linear;
+    margin: 8px 0 0;
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: currentColor;
+        transition: width 0.25s linear;
+    }
+
+    &:hover,&:focus {
+        color: $page-color;
+        cursor: pointer;
+        outline: 0;
+
+        &:after {
+            width: 0;
+        }
+    }
+}
