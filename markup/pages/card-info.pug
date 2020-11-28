@@ -9,8 +9,9 @@ html(class="no-js" lang="ru")
         +head(head.index)
 
     body.page
-        main.page__container
-            h1.page__title Voluptatem illo assumenda
+        main.page__container.page__container_cards
+            h1.page__title.page__title_cards Voluptatem illo assumenda
+
             section.card-info
                 article.card-info__description
                     h2.card-info__options
@@ -37,9 +38,9 @@ html(class="no-js" lang="ru")
                                 | -40%
                             | until 28 december
                     h5.card-info__without-discount
+                        | installment plan without discount
                         span.card-info__without-discount-span
-                            | installment plan without discount
-                        | 5000 ₽/month
+                            | 5000 ₽/month
 
                 form(action="#").form.card-info__form
                     +form__control({
@@ -54,6 +55,7 @@ html(class="no-js" lang="ru")
                     })
                     button(type="submit").form__btn
                         | Subscribe
+
         +footer()
 
         |%=symbols=%

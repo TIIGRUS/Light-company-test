@@ -1,0 +1,24 @@
+.card-info {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas:
+        "card-info__description"
+        "card-info__pricing"
+        "card-info__form"
+    ;
+
+    @include media-min(tablet) {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 18px;
+        grid-template-areas:
+            "card-info__description card-info__pricing"
+            "card-info__description card-info__form";
+    }
+
+    @include media-min(desktop) {
+        column-gap: 32px;
+        grid-template-areas:
+            "card-info__description card-info__pricing"
+            "card-info__form card-info__pricing";
+    }
+}

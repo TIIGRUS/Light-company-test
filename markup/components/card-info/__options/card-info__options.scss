@@ -4,5 +4,14 @@
     display: flex;
     align-items: center;
     margin: 16px 0;
+
+    @include media-min(tablet) {
+        font-size: 14px;
+    }
+
+    @include media-min(desktop) {
+        font-size: 16px;
+        margin: 0 0 27px;
+    }
 }
 

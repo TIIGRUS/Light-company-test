@@ -1,6 +1,14 @@
 .card-info__options-span {
-    font: 400 14px/140% $space-grotesk;
+    font: 500 14px/140% $space-grotesk;
     color: $dark-color;
     text-transform: uppercase;
     padding: 0 8px 0 0;
+
+    @include media-min(tablet) {
+        font-size: 18px;
+    }
+
+    @include media-min(desktop) {
+        font-size: 20px;
+    }
 }

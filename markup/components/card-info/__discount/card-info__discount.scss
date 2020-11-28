@@ -9,4 +9,13 @@
     background: #FEF653;
     padding: 10px 20px;
     box-sizing: border-box;
+    align-self: flex-start;
+
+    @include media-min(tablet) {
+        font-size: 10px;
+    }
+
+    @include media-min(desktop) {
+        font-size: 14px;
+    }
 }

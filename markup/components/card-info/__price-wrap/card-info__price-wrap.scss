@@ -1,4 +1,8 @@
 .card-info__price-wrap {
     display: flex;
     margin: 0 0 24px;
+
+    @include media-min(desktop) {
+        margin: 0 0 46px;
+    }
 }

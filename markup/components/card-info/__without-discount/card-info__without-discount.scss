@@ -1,6 +1,14 @@
 .card-info__without-discount {
-    font-size: 24px;
-    line-height: 170%;
-    font-weight: 400;
+    font-size: 8px;
+    line-height: 140%;
     margin: 24px 0 0;
+    font-weight: 400;
+
+    @include media-min(tablet) {
+        font-size: 10px;
+    }
+
+    @include media-min(desktop) {
+        font-size: 14px;
+    }
 }

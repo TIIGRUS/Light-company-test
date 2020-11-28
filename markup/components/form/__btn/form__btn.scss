@@ -29,4 +29,8 @@
             width: 0;
         }
     }
+
+    @include media-min(desktop) {
+        font-size: 30px;
+    }
 }
